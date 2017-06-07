@@ -1,0 +1,45 @@
+process.env.NODE_ENV = 'development';
+
+exports.production = {
+}
+
+exports.development = {
+    //Поля отсюда используются при отправке писем
+    mailerConfig: {
+        from: '*',
+    },
+    //smtpConfig скармливается транспортеру при создании соединения
+    smtpConfig: {
+        host: '*',
+        port: 25,
+        tls: {rejectUnauthorized: false},
+        // secure: false, // use SSL
+        // auth: {
+        //     user: 'user@gmail.com',
+        //     pass: 'pass'
+        // }
+    },
+    jira: {
+        protocol: 'https',
+        host: '',
+        port: '',
+        user: '',
+        password: '',
+        incProjectKey: 'TESTESC', // Это запрашивается по https://jira.osmp.ru/rest/api/2/issue/createmeta?projectKeys=INC
+        incidentIssueTypeKey: 'Task'
+    },
+    clientDomainName: 'http://localhost/47c/#',
+    botToken: 'long_telegram_bot_token',
+    port: 2211,
+    url: '/api',
+    cookies: {
+        secret: 'secret'
+    },
+    db: {
+        host: 'host',
+        port: 5432,
+        database: 'database',
+        user: 'user',
+        password: 'password'
+    }
+}

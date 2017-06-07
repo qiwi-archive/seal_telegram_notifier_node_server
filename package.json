@@ -1,0 +1,23 @@
+{
+  "name": "wise_lena_bot_server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "cron": "^1.1.0",
+    "express": "^3.4.8",
+    "jira": "^0.9.2",
+    "moment": "^2.5.1",
+    "node-telegram-bot-api": "",
+    "nodemailer": "~2.5.0",
+    "pg": "~6.0.3",
+    "type-of-is": "^3.2.0",
+    "underscore": "^1.6.0",
+    "underscore.string": "^2.3.3",
+    "validator": "^3.4.0",
+    "webshot": "^0.18.0"
+  }
+}

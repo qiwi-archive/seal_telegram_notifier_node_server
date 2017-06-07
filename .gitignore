@@ -1,0 +1,4 @@
+**.hg*
+.idea
+**/config*/*.js*
+node_modules
